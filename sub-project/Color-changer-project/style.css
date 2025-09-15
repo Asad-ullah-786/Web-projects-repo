@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    
+    height: 100%;
+    width: 100%;
+    font-family:sans-serif;
+}
+
+.container{
+    background-color:bisque;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.maindiv{
+    
+    margin: 10px;
+    display: flex;
+    gap:10px ;
+    
+   
+}
+.heading{
+    background-color:rgb(105, 199, 239);
+    font-size: 2.5rem;
+    width: fit-content;
+    padding: 10px;
+    border: solid rgba(0, 0, 0, 0.285) 1px;
+         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color:aqua;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+     border: solid rgba(0, 0, 0, 0.285) 1px;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+button:active{
+    scale: 0.9;
+}
+
+#colorinput{
+    padding: 10px;
+    width: 200px;
+     border: solid rgba(0, 0, 0, 0.221) 1px;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+     border-radius: 2px;
+}
+.currentcolor{
+    font-size: 18px;
+    background-color:rgb(228, 238, 121);
+    padding: 10px;
+    border-radius: 5px;
+     border: solid rgba(0, 0, 0, 0.285) 1px;
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media(max-width:600px){
+
+    button{
+   
+    padding: 3px;
+   
+    font-size: 0.8rem;
+    }
+.heading{
+ 
+    font-size: 1.5rem;
+  
+}
+
+#colorinput{
+    padding: 6px;
+    width: 180px;
+    font-size: 0.6rem;
+    
+}
+.currentcolor{
+    font-size: 14px;
+    
+    padding: 8px;
+  
+}
+
+}

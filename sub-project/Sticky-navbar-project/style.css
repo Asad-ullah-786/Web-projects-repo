@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    
+}
+
+.top-container{
+    background-image: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.top-container h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+
+}
+.text{
+    margin: 50px 5%;
+    font-family: cursive;
+    letter-spacing: 1.4px;
+
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: rgb(195, 222, 246);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0, .4);
+    transition: background-clour 0.8s;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+}
+.navbar ul li a:hover{
+    color: red;
+}
+.logo{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 0 10px;
+    color: red;
+    font-family: cursive;
+
+}
+
+.navbar.active{
+    background-color: black;
+}
+.navbar.active ul li a{
+    color: white;
+}
+
+.navbar.active ul li a:hover{
+    color: red;
+}

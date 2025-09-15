@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Rajput's Cart</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- start navbar  -->
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping 30-day return guarantee.</p>
+          </div>
+          <div class="sign_in_up">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img
+              class="logo"
+              width="70%"
+              height="auto"
+              src="./Public/logo (1).webp"
+              alt="Rajput store logo"
+            />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="addToCart.html"
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+              >
+                <i class="fa-solid fa-cart-shopping"> </i> 0
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end navbar  -->
+
+   
+    <!-- start our section of products -->
+
+    <section class="section-products">
+      <div style="margin-bottom: -80px;"  class="container">
+        <div class="section-common-heading" data-aos="fade-right">Selected Products</div>
+      </div>
+      <section class="container">
+        <div id="productContainer" data-aos="fade-down">
+        </div>
+      </section>
+      </section>
+    
+
+
+    <!-- start product template section -->
+
+    <template id="productTemplate">
+      <div class="cards" id="cardValue">
+      <span class="productCategory"></span>
+        
+        <div class="imageContainer">
+            <img class="productImage" src="" alt="">
+          </div>
+          <h2 class="productName"></h2>
+        
+        <div class="productPriceElement">
+            <p class="productPrice"></p>
+          </div>
+          
+            <div class="stockElement">
+              <button class="cartIncrement">+ </button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          <button class="add-to-cart-button remove-to-cart-button">Remove Cart</button>
+      </div>
+    </template>
+
+    <!-- end product template section -->
+
+
+    <!-- end our section of products -->
+
+   <div class="container"> <section class="productCartTotalElem" data-aos="flip-right">
+          <div class="productCartTotalElement">
+            <p style="font-size: 1.4rem ;">Selected Offer Summary</p>
+            <div class="productOrderTotal">
+              <div class="price-grid">
+                <p style="font-size: 1.3rem; color: rgb(103, 103, 103);">Sub Total :</p>
+                <p class="productSubTotal"> 0</p>
+              </div>
+              <div class="price-grid">
+                <p style="font-size: 1.3rem; color: rgb(103, 103, 103);">Tax : </p>
+                <p class="productTax"> $10</p>
+              </div>
+              <hr>
+              <div class="price-grid">
+                <p style="font-size: 1.3rem; color: rgb(103, 103, 103);">Find Total : </p>
+                <p  class="productFinalTotal"> 0</p>
+              </div>
+            </div>
+          </div>
+        </section></div>
+
+   <!--start footer section -->
+
+       <footer class="section-footer">
+        <script src="footer.js"></script>
+       </footer>
+      <!--End footer section -->
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+    <script type="module" src="showAddToCartCards.js"></script>
+  </body>
+</html>
