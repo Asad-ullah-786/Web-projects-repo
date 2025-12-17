@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 10 JavaScript Tricks for Developers | Asad Ullah</title>
+  <meta name="description" content="Asad Edu Hub - Empowering Learning with Innovative Solutions">
+    <meta name="keywords" content="Asad Edu Hub, Education, Learning, Courses, Online Learning">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <section class="blog-detail container">
+    <h1>Top 10 JavaScript Tricks for Developers</h1>
+
+    <div class="author-info">
+      <img src="asad2.jpg" alt="Asad Ullah" class="author-img" />
+      <div>
+        <p><b>By:</b> Asad Ullah | Developer</p>
+        <p class="blog-date">Published on October 9, 2025 • 9 min read</p>
+      </div>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="JavaScript Tips" class="blog-banner" />
+
+    <p>
+      JavaScript continues to evolve — and so should your coding style.  
+      Whether you’re a beginner or a professional, mastering modern JavaScript tricks can make your code cleaner, faster, and more readable.
+    </p>
+
+    <h2>1. Destructuring for Cleaner Code</h2>
+    <pre><code>const user = { name: "Asad", role: "Developer" };
+const { name, role } = user;</code></pre>
+
+    <h2>2. Default Parameters</h2>
+    <pre><code>function greet(name = "Guest") {
+  console.log(`Hello, ${name}!`);
+}</code></pre>
+
+    <h2>3. Template Literals for Readability</h2>
+    <pre><code>console.log(`Welcome back, ${user.name}!`);</code></pre>
+
+    <h2>4. Optional Chaining</h2>
+    <pre><code>const city = user?.address?.city ?? "Unknown";</code></pre>
+
+    <h2>5. Spread & Rest Operators</h2>
+    <pre><code>const arr = [1,2,3];
+const newArr = [...arr, 4];</code></pre>
+
+    <h2>6. Short-Circuit Evaluation</h2>
+    <pre><code>const username = inputName || "Anonymous";</code></pre>
+
+    <h2>7. Async/Await for Cleaner Async Code</h2>
+    <pre><code>async function getData() {
+  const res = await fetch("/api");
+  const data = await res.json();
+  console.log(data);
+}</code></pre>
+
+    <h2>8. Debounce Function</h2>
+    <p>Used to control how often a function executes (great for search boxes):</p>
+    <pre><code>function debounce(fn, delay) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}</code></pre>
+
+    <h2>9. Console Styling</h2>
+    <pre><code>console.log("%cHello Asad!", "color:#00bcd4; font-size:18px");</code></pre>
+
+    <h2>10. Object Property Shorthand</h2>
+    <pre><code>const name = "Asad", role = "Developer";
+const dev = { name, role };</code></pre>
+
+    <p><b>Conclusion:</b> These JS tips aren’t just shortcuts — they reflect a developer’s mindset for clean and efficient code.
+    Always stay curious, and keep experimenting!</p>
+
+    
+
+    <a href="index.html#blog" class="back-link">← Back to Blog</a>
+  </section>
+</body>
+</html>

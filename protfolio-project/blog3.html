@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Performance Optimization | Asad Ullah</title>
+  <meta name="description" content="Asad Edu Hub - Empowering Learning with Innovative Solutions">
+    <meta name="keywords" content="Asad Edu Hub, Education, Learning, Courses, Online Learning">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <section class="blog-detail container">
+    <h1>Website Performance Optimization</h1>
+
+    <div class="author-info">
+      <img src="asad2.jpg" alt="Asad Ullah" class="author-img" />
+      <div>
+        <p><b>By:</b> Asad Ullah | Developer</p>
+        <p class="blog-date">Published on October 9, 2025 • 7 min read</p>
+      </div>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Performance Optimization" class="blog-banner" />
+
+    <p>
+      Performance optimization is the hidden weapon of great developers.  
+      A website that loads in under 2 seconds keeps users engaged, improves conversions, and ranks better on search engines.  
+      Let’s explore some practical techniques.
+    </p>
+
+    <h2>1. Compress and Optimize Images</h2>
+    <p>
+      Use tools like <b>TinyPNG</b>, <b>ImageOptim</b>, or <b>Squoosh</b> to reduce image size.  
+      Modern formats like <code>WebP</code> or <code>AVIF</code> load much faster.
+    </p>
+
+    <h2>2. Minify and Bundle Your Code</h2>
+    <p>
+      Tools like <b>Vite</b> or <b>Webpack</b> can bundle and compress assets, reducing HTTP requests and file sizes.
+    </p>
+
+    <h2>3. Enable Browser Caching</h2>
+    <p>
+      Cache static resources with proper headers:
+    </p>
+    <pre><code>Cache-Control: public, max-age=31536000</code></pre>
+
+    <h2>4. Lazy Loading and Code Splitting</h2>
+    <p>
+      Only load assets when needed. Use <code>loading="lazy"</code> for images and dynamic imports for scripts.
+    </p>
+
+    <h2>5. Use a CDN</h2>
+    <p>
+      Content Delivery Networks (like Cloudflare or Vercel) serve content from the nearest location — cutting down latency.
+    </p>
+
+    <h2>6. Optimize Fonts and Third-party Scripts</h2>
+    <pre><code>@font-face {
+  font-display: swap;
+}</code></pre>
+    <p>Load only the fonts you need, and delay analytics scripts.</p>
+
+    <h2>7. Measure Performance</h2>
+    <p>
+      Use <b>Google Lighthouse</b> or <b>GTmetrix</b> to analyze performance and fix bottlenecks.
+    </p>
+
+    <p><b>Conclusion:</b> Performance optimization is not a one-time task — it’s a habit.  
+      Every millisecond matters when it comes to creating a smooth, professional experience.</p>
+
+   
+
+    <a href="index.html#blog" class="back-link">← Back to Blog</a>
+  </section>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* --- General Page Setup --- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+}
+
+/* --- Section Box --- */
+.section {
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- Headings --- */
+h1 {
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+h2 {
+  text-decoration: solid;
+  font-size: 1.5rem;
+  background-color: lightgray;
+  color: rgb(0, 150, 200);
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-left: 10px;
+}
+
+/* --- Footer --- */
+.footer {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+/* --- Image Styling --- */
+.image img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* --- Image + Text Layout --- */
+.column-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+/* --- Responsive Design --- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .section {
+    margin: 30px;
+    padding: 15px;
+  }
+
+  .column-2 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .image img {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .section {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .column-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2, h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mastering Responsive Web Design | Asad Ullah</title>
+  <meta name="description" content="Asad Edu Hub - Empowering Learning with Innovative Solutions">
+    <meta name="keywords" content="Asad Edu Hub, Education, Learning, Courses, Online Learning">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <section class="blog-detail container">
+    <h1>Mastering Responsive Web Design</h1>
+
+    <div class="author-info">
+      <img src="asad2.jpg" alt="Asad Ullah" class="author-img" />
+      <div>
+        <p><b>By:</b> Asad Ullah | Developer</p>
+        <p class="blog-date">Published on October 9, 2025 • 8 min read</p>
+      </div>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="Responsive Web Design" class="blog-banner" />
+
+    <p>
+      Responsive Web Design (RWD) is a foundational concept in modern web development.  
+      It ensures your website looks stunning on every screen — mobile, tablet, or desktop.  
+      In this article, we’ll dive into techniques that help developers build layouts that adapt beautifully.
+    </p>
+
+    <h2>1. The Need for Responsive Design</h2>
+    <p>
+      Over 60% of users browse the web on mobile devices.  
+      Google’s algorithm now prioritizes mobile-first websites, so responsive design directly affects your SEO and user retention.
+    </p>
+
+    <h2>2. Flexible Layouts with Flexbox & Grid</h2>
+    <p>
+      Avoid fixed-width designs. Instead, use percentage-based or relative units.  
+      CSS Flexbox and Grid are built for responsive layouts.
+    </p>
+    <pre><code>.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}</code></pre>
+
+    <h2>3. Mobile-First Media Queries</h2>
+    <p>
+      Always start designing for mobile screens and scale up.
+    </p>
+    <pre><code>@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+}</code></pre>
+
+    <h2>4. Responsive Typography & Images</h2>
+    <p>
+      Use the <code>clamp()</code> function for scalable text and <code>max-width: 100%</code> for images.
+    </p>
+    <pre><code>h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}</code></pre>
+
+    <h2>5. Testing & Tools</h2>
+    <p>
+      Use Chrome DevTools, Responsively App, or BrowserStack to test across real devices.
+    </p>
+
+    <p><b>Conclusion:</b> Responsive design builds trust and ensures accessibility.  
+      Remember — it’s not just about fitting screens, it’s about creating experiences.</p>
+
+    
+
+    <a href="index.html#blog" class="back-link">← Back to Blog</a>
+  </section>
+</body>
+</html>
